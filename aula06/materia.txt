@@ -1,0 +1,14 @@
+herança
+polimorfismo(super classe / interfaces) -> principio da substituição de liskov
+injeção de dependência
+
+factory method
+
+abstract factory
+
+arquiteturas
+[mvc 
+serviços]
+[mensageiro
+microserviços]
+[contariners]
