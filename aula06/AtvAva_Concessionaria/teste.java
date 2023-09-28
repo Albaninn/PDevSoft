@@ -5,25 +5,12 @@ public class teste{
         Concessionaria concessionaria = new Concessionaria(new BancoDeDadosArmazenamento());
         concessionaria.adicionarVeiculo(carro);
         concessionaria.adicionarVeiculo(moto);
-        
         for (Veiculo veiculo : concessionaria.listarVeiculos()) {
             System.out.println("Modelo: " + veiculo.getModelo() + ", Marca: " + veiculo.getMarca() + ", Ano: " + veiculo.getAnoFabricacao() + ", Preço: " + veiculo.getPreco());
         }
         Veiculo veiculoRecuperado = concessionaria.recuperarVeiculo("Corolla");
         if (veiculoRecuperado != null) {
             System.out.println("Veículo recuperado: " + veiculoRecuperado.getModelo() + ", Marca: " + veiculoRecuperado.getMarca());
-        }
-        
-        new Concessionaria(new ArquivoArmazenamento());
-        concessionaria.adicionarVeiculo(carro);
-        concessionaria.adicionarVeiculo(moto);
-        
-        for (Veiculo veiculo : concessionaria.listarVeiculos()) {
-            System.out.println("Modelo: " + veiculo.getModelo() + ", Marca: " + veiculo.getMarca() + ", Ano: " + veiculo.getAnoFabricacao() + ", Preço: " + veiculo.getPreco());
-        }
-        Veiculo veiculoRecuperado1 = concessionaria.recuperarVeiculo("Corolla");
-        if (veiculoRecuperado1 != null) {
-            System.out.println("Veículo recuperado: " + veiculoRecuperado1.getModelo() + ", Marca: " + veiculoRecuperado1.getMarca());
         }
     }
 }
