@@ -71,3 +71,11 @@ app.post('/authorize', (req, res) => {
 app.listen(port, () => {
      console.log(`Servidor rodando na porta ${port}`);
 });
+
+// app.js
+const productController = require('./controllers/productController');
+
+// Rotas para produtos
+app.post('/products', productController.createProduct);
+app.get('/products/:id', productController.getProductById);
+app.get('/products', productController.getAllProducts);
