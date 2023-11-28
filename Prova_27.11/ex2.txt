@@ -1,0 +1,21 @@
+Como desenvolvedor da aplicação, atendi às especificações fornecidas para a construção do sistema. O uso de Node.js e Express foi determinado pelos requisitos, dada a eficiência dessas tecnologias em aplicações web. Node.js oferece um ambiente de execução JavaScript no servidor, adequado para aplicações escaláveis, e Express é um framework que facilita a criação de rotas e middlewares, sendo ideal para APIs RESTful.
+
+Sequelize, um ORM para Node.js, foi escolhido por sua capacidade de gerenciar diferentes bancos de dados e simplificar operações de banco de dados sem necessidade de SQL complexo, aumentando a segurança e a facilidade de manutenção do código.
+
+A arquitetura Model-Service-Controller (MSC) foi adotada para manter o código organizado e modular, facilitando a manutenção e o desenvolvimento. Nesta arquitetura, Models representam a estrutura de dados, Services contêm a lógica de negócios e Controllers gerenciam a entrada e saída de dados.
+
+Para a autenticação, foi requisitado o uso de JWT (JSON Web Tokens), conhecido por sua eficiência e segurança na gestão de sessões de usuários e no controle de acesso a recursos.
+
+A estrutura de pastas foi projetada para refletir a arquitetura MSC, facilitando a compreensão e a contribuição de outros desenvolvedores ao projeto.
+
+A documentação da API inclui:
+
+- Registro de Usuários (POST /api/usuarios/registrar): Permite a criação de um novo usuário. Espera email e password no corpo da requisição. Responde com detalhes do usuário ou erro.
+
+- Login (POST /api/login): Autentica o usuário e retorna um token JWT. Requer email e password. Responde com um token ou erro de autenticação.
+
+- Criação de Produto (POST /api/produtos): Adiciona um novo produto. Aceita id, name, description e price. Retorna detalhes do produto ou erro.
+
+- Consulta de Produto (GET /api/produtos/:id): Busca informações de um produto pelo ID. Responde com detalhes do produto ou aviso de não encontrado.
+
+Essa documentação é vital para a compreensão e utilização eficaz da API, sendo essencial para o sucesso da aplicação.
