@@ -1,0 +1,12 @@
+No desenvolvimento do sistema de comércio eletrônico, eu adotei os padrões de projeto Factory Method e Abstract Factory para facilitar a criação de objetos de pagamento. Isso me permite adicionar novos métodos de pagamento com facilidade e manter a lógica de criação em um único lugar.
+
+Também empreguei a Injeção de Dependências para separar a classe ECommerce das implementações específicas dos métodos de pagamento. Com isso, posso mudar as estratégias de pagamento sem necessidade de alterar o núcleo do sistema, o que torna o design mais modular e simplifica a realização de testes.
+
+A importância desses padrões no meu projeto se dá por:
+
+- Diminuir o acoplamento entre as classes, tornando o sistema mais robusto e adaptável a mudanças.
+- Melhorar a coesão ao centralizar as operações de criação de objetos relacionados.
+- Incentivar a reutilização do código e aumentar a flexibilidade, facilitando a inclusão de novos tipos de pagamento.
+- Aprimorar a testabilidade, permitindo que eu substitua componentes facilmente durante os testes.
+
+A escolha desses padrões é essencial para a construção de um sistema de pagamento que seja escalável e de manutenção simplificada, o que é fundamental em um ambiente de comércio eletrônico.
